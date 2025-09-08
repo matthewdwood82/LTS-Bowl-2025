@@ -13,8 +13,8 @@ on:
 name: Update Scores
 
 permissions:
-    contents: write
-    pages: write
+    contents: read, write
+    pages: read, write
 
 jobs:
   build-deploy:
