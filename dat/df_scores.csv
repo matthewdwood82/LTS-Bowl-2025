@@ -1,49 +1,49 @@
 league,week,franchise_id,franchise_score,opponent_id,opponent_score,result,diff_score,diff_rank,total_score,total_rank,franchise_name,user_name,franchise_name_opponent,user_name_opponent
-L1,1,1,125.45,5,189.15,NA,63.7,1,314.6,2,Mouth Kazoo Maestros,Weagle85,High Tea,OhShagHennessy
-L1,1,2,129.05,8,147.4,NA,18.349999999999994,15,276.45000000000005,14,Golf Cartin',stephensear,Bad Faith Fantasy,cptbeefalo
-L1,1,3,125.9,12,132.95,NA,7.049999999999983,21,258.85,17,THE KIDS,CommieEsq,MikeDavisThrupple,DavisDayCare
-L1,1,4,142.7,9,114.55,NA,28.14999999999999,10,257.25,20,DeadEndFriends,DeadEndFriends,Not Great Bob,tommcg17
-L1,1,5,189.15,1,125.45,NA,63.7,1,314.6,2,High Tea,OhShagHennessy,Mouth Kazoo Maestros,Weagle85
-L1,1,6,156.5,11,123.55,NA,32.95,7,280.05,11,Diarrhea Happens,bartonscott84,Klabbertrap,Klabbertrap
-L1,1,7,142.35,10,114.5,NA,27.849999999999994,11,256.85,21,Week 3 Meat Mountain,PossumKingdom,Vandelay Industries,DGo81
-L1,1,8,147.4,2,129.05,NA,18.349999999999994,15,276.45000000000005,14,Bad Faith Fantasy,cptbeefalo,Golf Cartin',stephensear
-L1,1,9,114.55,4,142.7,NA,28.14999999999999,10,257.25,20,Not Great Bob,tommcg17,DeadEndFriends,DeadEndFriends
-L1,1,10,114.5,7,142.35,NA,27.849999999999994,11,256.85,21,Vandelay Industries,DGo81,Week 3 Meat Mountain,PossumKingdom
-L1,1,11,123.55,6,156.5,NA,32.95,7,280.05,11,Klabbertrap,Klabbertrap,Diarrhea Happens,bartonscott84
-L1,1,12,132.95,3,125.9,NA,7.049999999999983,21,258.85,17,MikeDavisThrupple,DavisDayCare,THE KIDS,CommieEsq
-L2,1,1,120.65,11,157.15,NA,36.5,6,277.8,13,fantasyscott,fantasyscott,Horsey Sauce,FeelingDangerouz
+L1,1,1,131.05,5,189.15,NA,58.099999999999994,2,320.20000000000005,2,Mouth Kazoo Maestros,Weagle85,High Tea,OhShagHennessy
+L1,1,2,129.05,8,147.4,NA,18.349999999999994,13,276.45000000000005,17,Golf Cartin',stephensear,Bad Faith Fantasy,cptbeefalo
+L1,1,3,141.4,12,138.85,NA,2.5500000000000114,24,280.25,14,THE KIDS,CommieEsq,MikeDavisThrupple,DavisDayCare
+L1,1,4,142.7,9,120.05,NA,22.64999999999999,11,262.75,19,DeadEndFriends,DeadEndFriends,Not Great Bob,tommcg17
+L1,1,5,189.15,1,131.05,NA,58.099999999999994,2,320.20000000000005,2,High Tea,OhShagHennessy,Mouth Kazoo Maestros,Weagle85
+L1,1,6,156.5,11,125.35,NA,31.150000000000006,8,281.85,13,Diarrhea Happens,bartonscott84,Klabbertrap,Klabbertrap
+L1,1,7,142.35,10,114.5,NA,27.849999999999994,9,256.85,21,Week 3 Meat Mountain,PossumKingdom,Vandelay Industries,DGo81
+L1,1,8,147.4,2,129.05,NA,18.349999999999994,13,276.45000000000005,17,Bad Faith Fantasy,cptbeefalo,Golf Cartin',stephensear
+L1,1,9,120.05,4,142.7,NA,22.64999999999999,11,262.75,19,Not Great Bob,tommcg17,DeadEndFriends,DeadEndFriends
+L1,1,10,114.5,7,142.35,NA,27.849999999999994,9,256.85,21,Vandelay Industries,DGo81,Week 3 Meat Mountain,PossumKingdom
+L1,1,11,125.35,6,156.5,NA,31.150000000000006,8,281.85,13,Klabbertrap,Klabbertrap,Diarrhea Happens,bartonscott84
+L1,1,12,138.85,3,141.4,NA,2.5500000000000114,24,280.25,14,MikeDavisThrupple,DavisDayCare,THE KIDS,CommieEsq
+L2,1,1,120.65,11,157.15,NA,36.5,6,277.8,15,fantasyscott,fantasyscott,Horsey Sauce,FeelingDangerouz
 L2,1,2,156.65,4,166.05,NA,9.400000000000006,19,322.70000000000005,1,aspires,aspires,The Huge Mistaeks,RipSlabcheek
-L2,1,3,148.3,12,138.3,NA,10,18,286.6,7,Randomizer Interns,matthewdwood82,Edina Cake Eaters,ecsirkin
+L2,1,3,148.3,12,138.3,NA,10,18,286.6,9,Randomizer Interns,matthewdwood82,Edina Cake Eaters,ecsirkin
 L2,1,4,166.05,2,156.65,NA,9.400000000000006,19,322.70000000000005,1,The Huge Mistaeks,RipSlabcheek,aspires,aspires
-L2,1,5,147.9,7,142.9,NA,5,22,290.8,5,SOTBD,SOTBD,Natanab,Natanab
-L2,1,6,85.95,10,116.25,NA,30.299999999999997,9,202.2,24,Kendradhl,Kendradhl,Duluth Eskimos,GREGGELS17
-L2,1,7,142.9,5,147.9,NA,5,22,290.8,5,Natanab,Natanab,SOTBD,SOTBD
-L2,1,8,128.8,9,153.1,NA,24.299999999999983,12,281.9,10,kipahisbush,kipahisbush,Fozberry64,Fozberry64
-L2,1,9,153.1,8,128.8,NA,24.299999999999983,12,281.9,10,Fozberry64,Fozberry64,kipahisbush,kipahisbush
-L2,1,10,116.25,6,85.95,NA,30.299999999999997,9,202.2,24,Duluth Eskimos,GREGGELS17,Kendradhl,Kendradhl
-L2,1,11,157.15,1,120.65,NA,36.5,6,277.8,13,Horsey Sauce,FeelingDangerouz,fantasyscott,fantasyscott
-L2,1,12,138.3,3,148.3,NA,10,18,286.6,7,Edina Cake Eaters,ecsirkin,Randomizer Interns,matthewdwood82
-L3,1,1,162.45,3,148.1,NA,14.349999999999994,16,310.54999999999995,3,Rice Suspened for 6 Games,DrWraith84,Speaks Kindly Holds Knife,Deredactyl
-L3,1,2,138.95,12,143.45,NA,4.5,23,282.4,9,jetsgnome22,jetsgnome22,johnnysmomskid,johnnysmomskid
-L3,1,3,148.1,1,162.45,NA,14.349999999999994,16,310.54999999999995,3,Speaks Kindly Holds Knife,Deredactyl,Rice Suspened for 6 Games,DrWraith84
-L3,1,4,111.4,7,173.9,NA,62.5,2,285.3,8,TurdFergusonFF,TurdFergusonFF,WilhelmTilt,ringular
-L3,1,5,108.6,6,122.6,NA,14,17,231.2,23,Purple Monkey Dishwasher ,alexewart,39ers,tripp39
-L3,1,6,122.6,5,108.6,NA,14,17,231.2,23,39ers,tripp39,Purple Monkey Dishwasher ,alexewart
-L3,1,7,173.9,4,111.4,NA,62.5,2,285.3,8,WilhelmTilt,ringular,TurdFergusonFF,TurdFergusonFF
-L3,1,8,122.9,10,155.25,NA,32.349999999999994,8,278.15,12,The Woke FAAB,reginaldo,Greenhorns,D3M090
-L3,1,9,126.25,11,144.8,NA,18.55000000000001,14,271.05,15,SycamoreFlynns,SycamoreFlynns,Closet Poopers,coots1185
-L3,1,10,155.25,8,122.9,NA,32.349999999999994,8,278.15,12,Greenhorns,D3M090,The Woke FAAB,reginaldo
-L3,1,11,144.8,9,126.25,NA,18.55000000000001,14,271.05,15,Closet Poopers,coots1185,SycamoreFlynns,SycamoreFlynns
-L3,1,12,143.45,2,138.95,NA,4.5,23,282.4,9,johnnysmomskid,johnnysmomskid,jetsgnome22,jetsgnome22
-L4,1,1,114.75,12,174.1,NA,59.349999999999994,3,288.85,6,Sweep the Leg,ctjoumas,outshine13,outshine13
-L4,1,2,128.95,3,121.75,NA,7.199999999999989,20,250.7,22,Ram it!,IreneTurner,The Lib Owners,nak97
-L4,1,3,121.75,2,128.95,NA,7.199999999999989,20,250.7,22,The Lib Owners,nak97,Ram it!,IreneTurner
-L4,1,4,102.4,10,155,NA,52.599999999999994,4,257.4,19,Chickpea Smoothie,apulianas,Searching for Stapler,Spencer
-L4,1,5,110.55,6,155.8,NA,45.250000000000014,5,266.35,16,The Glorious Process,armandoguzman,"Once again, I'm tilting ",arthurdantas
-L4,1,6,155.8,5,110.55,NA,45.250000000000014,5,266.35,16,"Once again, I'm tilting ",arthurdantas,The Glorious Process,armandoguzman
-L4,1,7,118.5,8,140.35,NA,21.849999999999994,13,258.85,17,Trailing Daler,teamdaler,NinerJay,NinerJay
-L4,1,8,140.35,7,118.5,NA,21.849999999999994,13,258.85,17,NinerJay,NinerJay,Trailing Daler,teamdaler
-L4,1,9,146.3,11,145.8,NA,0.5,24,292.1,4,crackofdawn321,crackofdawn321,Damn Fine Coffee,JoshWest
-L4,1,10,155,4,102.4,NA,52.599999999999994,4,257.4,19,Searching for Stapler,Spencer,Chickpea Smoothie,apulianas
-L4,1,11,145.8,9,146.3,NA,0.5,24,292.1,4,Damn Fine Coffee,JoshWest,crackofdawn321,crackofdawn321
-L4,1,12,174.1,1,114.75,NA,59.349999999999994,3,288.85,6,outshine13,outshine13,Sweep the Leg,ctjoumas
+L2,1,5,149.7,7,154.6,NA,4.900000000000006,23,304.29999999999995,5,SOTBD,SOTBD,Natanab,Natanab
+L2,1,6,100.85,10,116.25,NA,15.400000000000006,15,217.1,24,Kendradhl,Kendradhl,Duluth Eskimos,GREGGELS17
+L2,1,7,154.6,5,149.7,NA,4.900000000000006,23,304.29999999999995,5,Natanab,Natanab,SOTBD,SOTBD
+L2,1,8,132,9,159,NA,27,10,291,8,kipahisbush,kipahisbush,Fozberry64,Fozberry64
+L2,1,9,159,8,132,NA,27,10,291,8,Fozberry64,Fozberry64,kipahisbush,kipahisbush
+L2,1,10,116.25,6,100.85,NA,15.400000000000006,15,217.1,24,Duluth Eskimos,GREGGELS17,Kendradhl,Kendradhl
+L2,1,11,157.15,1,120.65,NA,36.5,6,277.8,15,Horsey Sauce,FeelingDangerouz,fantasyscott,fantasyscott
+L2,1,12,138.3,3,148.3,NA,10,18,286.6,9,Edina Cake Eaters,ecsirkin,Randomizer Interns,matthewdwood82
+L3,1,1,164.35,3,148.1,NA,16.25,14,312.45,3,Rice Suspened for 6 Games,DrWraith84,Speaks Kindly Holds Knife,Deredactyl
+L3,1,2,138.95,12,147.05,NA,8.100000000000023,21,286,10,jetsgnome22,jetsgnome22,johnnysmomskid,johnnysmomskid
+L3,1,3,148.1,1,164.35,NA,16.25,14,312.45,3,Speaks Kindly Holds Knife,Deredactyl,Rice Suspened for 6 Games,DrWraith84
+L3,1,4,111.4,7,173.9,NA,62.5,1,285.3,11,TurdFergusonFF,TurdFergusonFF,WilhelmTilt,ringular
+L3,1,5,108.6,6,122.6,NA,14,16,231.2,23,Purple Monkey Dishwasher ,alexewart,39ers,tripp39
+L3,1,6,122.6,5,108.6,NA,14,16,231.2,23,39ers,tripp39,Purple Monkey Dishwasher ,alexewart
+L3,1,7,173.9,4,111.4,NA,62.5,1,285.3,11,WilhelmTilt,ringular,TurdFergusonFF,TurdFergusonFF
+L3,1,8,128.8,10,164.05,NA,35.25,7,292.85,7,The Woke FAAB,reginaldo,Greenhorns,D3M090
+L3,1,9,137.55,11,146.6,NA,9.049999999999983,20,284.15,12,SycamoreFlynns,SycamoreFlynns,Closet Poopers,coots1185
+L3,1,10,164.05,8,128.8,NA,35.25,7,292.85,7,Greenhorns,D3M090,The Woke FAAB,reginaldo
+L3,1,11,146.6,9,137.55,NA,9.049999999999983,20,284.15,12,Closet Poopers,coots1185,SycamoreFlynns,SycamoreFlynns
+L3,1,12,147.05,2,138.95,NA,8.100000000000023,21,286,10,johnnysmomskid,johnnysmomskid,jetsgnome22,jetsgnome22
+L4,1,1,126.05,12,174.1,NA,48.05,3,300.15,6,Sweep the Leg,ctjoumas,outshine13,outshine13
+L4,1,2,128.95,3,121.75,NA,7.199999999999989,22,250.7,22,Ram it!,IreneTurner,The Lib Owners,nak97
+L4,1,3,121.75,2,128.95,NA,7.199999999999989,22,250.7,22,The Lib Owners,nak97,Ram it!,IreneTurner
+L4,1,4,120.05,10,156.9,NA,36.85000000000001,5,276.95,16,Chickpea Smoothie,apulianas,Searching for Stapler,Spencer
+L4,1,5,113.75,6,155.8,NA,42.05000000000001,4,269.55,18,The Glorious Process,armandoguzman,"Once again, I'm tilting ",arthurdantas
+L4,1,6,155.8,5,113.75,NA,42.05000000000001,4,269.55,18,"Once again, I'm tilting ",arthurdantas,The Glorious Process,armandoguzman
+L4,1,7,120.3,8,140.35,NA,20.049999999999997,12,260.65,20,Trailing Daler,teamdaler,NinerJay,NinerJay
+L4,1,8,140.35,7,120.3,NA,20.049999999999997,12,260.65,20,NinerJay,NinerJay,Trailing Daler,teamdaler
+L4,1,9,149.9,11,161.5,NA,11.599999999999994,17,311.4,4,crackofdawn321,crackofdawn321,Damn Fine Coffee,JoshWest
+L4,1,10,156.9,4,120.05,NA,36.85000000000001,5,276.95,16,Searching for Stapler,Spencer,Chickpea Smoothie,apulianas
+L4,1,11,161.5,9,149.9,NA,11.599999999999994,17,311.4,4,Damn Fine Coffee,JoshWest,crackofdawn321,crackofdawn321
+L4,1,12,174.1,1,126.05,NA,48.05,3,300.15,6,outshine13,outshine13,Sweep the Leg,ctjoumas
