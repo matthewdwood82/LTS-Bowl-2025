@@ -199,24 +199,24 @@ df_total_points <- df_scores %>%
 readr::write_csv(df_total_points, "dat/df_total_points.csv")
 
 
-# playoffs
-v_bracket <- rep(c("winners_bracket", "losers_bracket"), 5)
-
-v_league_id <- rep(unlist(purrr::map(lts_conn, "league_id")), 2) %>% sort()
-
-v_query <- glue::glue("league/{v_league_id}/{v_bracket}")
-
-v_query_string <- purrr::map(v_query, ~rep(.x, 4)) %>% unlist(.)
-
-df_playoffs <- purrr::map(v_query, ~ffscrapr::sleeper_getendpoint(.x)) %>% 
-  purrr::map(., `[`, c("content", "query")) %>%
-  # purrr::set_names(purrr::map(., "query")) %>% 
-  dplyr::bind_rows(.id = "league_id") %>% 
-  dplyr::mutate(league = names(v_league_id[as.numeric(league_id)]),
-    league_id = v_league_id[as.numeric(league_id)]) %>% 
-  tidyr::unnest_wider(content)  %>% 
-  tidyr::unnest_wider(t1_from, names_sep = "_")  %>%
-  tidyr::unnest_wider(t2_from, names_sep = "_")
+# # playoffs
+# v_bracket <- rep(c("winners_bracket", "losers_bracket"), 5)
+# 
+# v_league_id <- rep(unlist(purrr::map(lts_conn, "league_id")), 2) %>% sort()
+# 
+# v_query <- glue::glue("league/{v_league_id}/{v_bracket}")
+# 
+# v_query_string <- purrr::map(v_query, ~rep(.x, 4)) %>% unlist(.)
+# 
+# df_playoffs <- purrr::map(v_query, ~ffscrapr::sleeper_getendpoint(.x)) %>% 
+#   purrr::map(., `[`, c("content", "query")) %>%
+#   # purrr::set_names(purrr::map(., "query")) %>% 
+#   dplyr::bind_rows(.id = "league_id") %>% 
+#   dplyr::mutate(league = names(v_league_id[as.numeric(league_id)]),
+#     league_id = v_league_id[as.numeric(league_id)]) %>% 
+#   tidyr::unnest_wider(content)  %>% 
+#   tidyr::unnest_wider(t1_from, names_sep = "_")  %>%
+#   tidyr::unnest_wider(t2_from, names_sep = "_")
 
 
 
@@ -240,7 +240,7 @@ v_max_week <- length(df_week_list)
 
 
 # # get manual survival table
-df_survived_manual <- readr::read_csv("dat/df_survived_manual.csv")
+# df_survived_manual <- readr::read_csv("dat/df_survived_manual.csv")
 
 # get survival table for wk 1-13
 df_survived <- df_week_list %>%
@@ -251,7 +251,7 @@ df_survived <- df_week_list %>%
       # the effect is that any ties are broken using lowest cumulative score
       dplyr::slice_max(
         order_by = (franchise_score + .00001 * cum_franchise_score),
-        n = -4,
+        n = -3,
         with_ties = FALSE
       )
   }, .init = df_week_list$`1`) %>% 
@@ -268,13 +268,13 @@ df_survived %>%
     Score = franchise_score,
     `Cumulative Score` = cum_franchise_score
   ) %>%
-  dplyr::bind_rows(df_survived_manual) %>%
+  # dplyr::bind_rows(df_survived_manual) %>%
   dplyr::arrange(desc(`Survival Week`), desc(Score)) %>%
   readr::write_csv(., "dat/df_survived.csv")
 
 
 # # get manual eliminated table
-df_eliminated_manual <- readr::read_csv("dat/df_eliminated_manual.csv")
+# df_eliminated_manual <- readr::read_csv("dat/df_eliminated_manual.csv")
 
 # get eliminated table by anti-joining with survival table
 df_eliminated <-
@@ -291,7 +291,7 @@ df_eliminated <-
     Score = franchise_score,
     `Cumulative Score at Elimination` = cum_franchise_score
   ) %>% 
-  dplyr::bind_rows(df_eliminated_manual) %>%
+  # dplyr::bind_rows(df_eliminated_manual) %>%
   dplyr::arrange(desc(`Eliminated Week`), desc(Score))
   
 
