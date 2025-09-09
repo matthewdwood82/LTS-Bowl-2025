@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Data Dictionary - Player Stats</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Data Dictionary - Player Stats</h1>
+
+
+
+<table>
+<colgroup>
+<col width="9%" />
+<col width="3%" />
+<col width="87%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">field</th>
+<th align="left">data_type</th>
+<th align="left">description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">player_id</td>
+<td align="left">character</td>
+<td align="left">Player’s gsis_id. Use this to join to other sources,
+e.g. load_players().</td>
+</tr>
+<tr class="even">
+<td align="left">player_name</td>
+<td align="left">character</td>
+<td align="left">Abbreviated name of player as provided by playstats
+api</td>
+</tr>
+<tr class="odd">
+<td align="left">player_display_name</td>
+<td align="left">character</td>
+<td align="left">Name of player as provided by
+<code>load_players()</code></td>
+</tr>
+<tr class="even">
+<td align="left">position</td>
+<td align="left">character</td>
+<td align="left">Position of player as listed by NFL</td>
+</tr>
+<tr class="odd">
+<td align="left">position_group</td>
+<td align="left">character</td>
+<td align="left">Position group of player as listed by NFL</td>
+</tr>
+<tr class="even">
+<td align="left">headshot_url</td>
+<td align="left">character</td>
+<td align="left">Player’s nfl.com headshot URL</td>
+</tr>
+<tr class="odd">
+<td align="left">season</td>
+<td align="left">numeric</td>
+<td align="left">Official NFL season</td>
+</tr>
+<tr class="even">
+<td align="left">week</td>
+<td align="left">numeric</td>
+<td align="left">Game week number</td>
+</tr>
+<tr class="odd">
+<td align="left">season_type</td>
+<td align="left">character</td>
+<td align="left"><code>REG</code> for regular season, <code>POST</code>
+for postseason</td>
+</tr>
+<tr class="even">
+<td align="left">team</td>
+<td align="left">character</td>
+<td align="left">Abbreviation of player’s team</td>
+</tr>
+<tr class="odd">
+<td align="left">opponent_team</td>
+<td align="left">character</td>
+<td align="left">Abbreviation of opponent’s team</td>
+</tr>
+<tr class="even">
+<td align="left">completions</td>
+<td align="left">numeric</td>
+<td align="left">The number of completed passes.</td>
+</tr>
+<tr class="odd">
+<td align="left">attempts</td>
+<td align="left">numeric</td>
+<td align="left">The number of pass attempts as defined by the NFL.</td>
+</tr>
+<tr class="even">
+<td align="left">passing_yards</td>
+<td align="left">numeric</td>
+<td align="left">Yards gained on pass plays.</td>
+</tr>
+<tr class="odd">
+<td align="left">passing_tds</td>
+<td align="left">numeric</td>
+<td align="left">The number of passing touchdowns.</td>
+</tr>
+<tr class="even">
+<td align="left">passing_interceptions</td>
+<td align="left">numeric</td>
+<td align="left">Number of passing interceptions</td>
+</tr>
+<tr class="odd">
+<td align="left">sacks_suffered</td>
+<td align="left">numeric</td>
+<td align="left">Number of sacks taken as a QB</td>
+</tr>
+<tr class="even">
+<td align="left">sack_yards_lost</td>
+<td align="left">numeric</td>
+<td align="left">Yards lost from sacks suffered by this player</td>
+</tr>
+<tr class="odd">
+<td align="left">sack_fumbles</td>
+<td align="left">numeric</td>
+<td align="left">The number of sacks suffered with a fumble.</td>
+</tr>
+<tr class="even">
+<td align="left">sack_fumbles_lost</td>
+<td align="left">numeric</td>
+<td align="left">The number of sacks suffered with a lost fumble.</td>
+</tr>
+<tr class="odd">
+<td align="left">passing_air_yards</td>
+<td align="left">numeric</td>
+<td align="left">Passing air yards (includes incomplete passes).</td>
+</tr>
+<tr class="even">
+<td align="left">passing_yards_after_catch</td>
+<td align="left">numeric</td>
+<td align="left">Yards after the catch gained on plays in which player
+was the passer (this is an unofficial stat and may differ slightly
+between different sources).</td>
+</tr>
+<tr class="odd">
+<td align="left">passing_first_downs</td>
+<td align="left">numeric</td>
+<td align="left">First downs on pass attempts.</td>
+</tr>
+<tr class="even">
+<td align="left">passing_epa</td>
+<td align="left">numeric</td>
+<td align="left">Total expected points added on pass attempts and sacks.
+NOTE: this uses the variable <code>qb_epa</code>, which gives QB credit
+for EPA for up to the point where a receiver lost a fumble after a
+completed catch and makes EPA work more like passing yards on plays with
+fumbles.</td>
+</tr>
+<tr class="odd">
+<td align="left">passing_cpoe</td>
+<td align="left">numeric</td>
+<td align="left">Completion percentage over expected for this
+player.</td>
+</tr>
+<tr class="even">
+<td align="left">passing_2pt_conversions</td>
+<td align="left">numeric</td>
+<td align="left">Two-point conversion passes.</td>
+</tr>
+<tr class="odd">
+<td align="left">pacr</td>
+<td align="left">numeric</td>
+<td align="left">Passing (yards) Air (yards) Conversion Ratio - the
+number of passing yards per air yards thrown per game</td>
+</tr>
+<tr class="even">
+<td align="left">carries</td>
+<td align="left">numeric</td>
+<td align="left">The number of official rush attempts (incl. scrambles
+and kneel downs). Rushes after a lateral reception don’t count as
+carry.</td>
+</tr>
+<tr class="odd">
+<td align="left">rushing_yards</td>
+<td align="left">numeric</td>
+<td align="left">Yards gained when rushing with the ball
+(incl. scrambles and kneel downs). Also includes yards gained after
+obtaining a lateral on a play that started with a rushing attempt.</td>
+</tr>
+<tr class="even">
+<td align="left">rushing_tds</td>
+<td align="left">numeric</td>
+<td align="left">The number of rushing touchdowns (incl. scrambles).
+Also includes touchdowns after obtaining a lateral on a play that
+started with a rushing attempt.</td>
+</tr>
+<tr class="odd">
+<td align="left">rushing_fumbles</td>
+<td align="left">numeric</td>
+<td align="left">The number of rushes with a fumble.</td>
+</tr>
+<tr class="even">
+<td align="left">rushing_fumbles_lost</td>
+<td align="left">numeric</td>
+<td align="left">The number of rushes with a lost fumble.</td>
+</tr>
+<tr class="odd">
+<td align="left">rushing_first_downs</td>
+<td align="left">numeric</td>
+<td align="left">First downs on rush attempts (incl. scrambles).</td>
+</tr>
+<tr class="even">
+<td align="left">rushing_epa</td>
+<td align="left">numeric</td>
+<td align="left">Expected points added on rush attempts (incl. scrambles
+and kneel downs).</td>
+</tr>
+<tr class="odd">
+<td align="left">rushing_2pt_conversions</td>
+<td align="left">numeric</td>
+<td align="left">Two-point conversion rushes</td>
+</tr>
+<tr class="even">
+<td align="left">receptions</td>
+<td align="left">numeric</td>
+<td align="left">The number of pass receptions. Lateral receptions
+officially don’t count as reception.</td>
+</tr>
+<tr class="odd">
+<td align="left">targets</td>
+<td align="left">numeric</td>
+<td align="left">The number of pass plays where the player was the
+targeted receiver.</td>
+</tr>
+<tr class="even">
+<td align="left">receiving_yards</td>
+<td align="left">numeric</td>
+<td align="left">Yards gained after a pass reception. Includes yards
+gained after receiving a lateral on a play that started as a pass
+play.</td>
+</tr>
+<tr class="odd">
+<td align="left">receiving_tds</td>
+<td align="left">numeric</td>
+<td align="left">The number of touchdowns following a pass reception.
+Also includes touchdowns after receiving a lateral on a play that
+started as a pass play.</td>
+</tr>
+<tr class="even">
+<td align="left">receiving_fumbles</td>
+<td align="left">numeric</td>
+<td align="left">The number of fumbles after a pass reception.</td>
+</tr>
+<tr class="odd">
+<td align="left">receiving_fumbles_lost</td>
+<td align="left">numeric</td>
+<td align="left">The number of fumbles lost after a pass reception.</td>
+</tr>
+<tr class="even">
+<td align="left">receiving_air_yards</td>
+<td align="left">numeric</td>
+<td align="left">Receiving air yards (incl. incomplete passes).</td>
+</tr>
+<tr class="odd">
+<td align="left">receiving_yards_after_catch</td>
+<td align="left">numeric</td>
+<td align="left">Yards after the catch gained on plays in which player
+was receiver (this is an unofficial stat and may differ slightly between
+different sources).</td>
+</tr>
+<tr class="even">
+<td align="left">receiving_first_downs</td>
+<td align="left">numeric</td>
+<td align="left">Total number of first downs gained on receptions</td>
+</tr>
+<tr class="odd">
+<td align="left">receiving_epa</td>
+<td align="left">numeric</td>
+<td align="left">Total EPA on plays where this receiver was
+targeted</td>
+</tr>
+<tr class="even">
+<td align="left">receiving_2pt_conversions</td>
+<td align="left">numeric</td>
+<td align="left">Two-point conversion receptions</td>
+</tr>
+<tr class="odd">
+<td align="left">racr</td>
+<td align="left">numeric</td>
+<td align="left">Receiving (yards) Air (yards) Conversion Ratio - the
+number of receiving yards per air yards targeted per game</td>
+</tr>
+<tr class="even">
+<td align="left">target_share</td>
+<td align="left">numeric</td>
+<td align="left">Player’s share of team receiving targets in this
+game</td>
+</tr>
+<tr class="odd">
+<td align="left">air_yards_share</td>
+<td align="left">numeric</td>
+<td align="left">Player’s share of the team’s air yards in this
+game</td>
+</tr>
+<tr class="even">
+<td align="left">wopr</td>
+<td align="left">numeric</td>
+<td align="left">Weighted OPportunity Rating - 1.5 x target_share + 0.7
+x air_yards_share - a weighted average that contextualizes total fantasy
+usage.</td>
+</tr>
+<tr class="odd">
+<td align="left">special_teams_tds</td>
+<td align="left">numeric</td>
+<td align="left">Total number of kick/punt return touchdowns</td>
+</tr>
+<tr class="even">
+<td align="left">def_tackles_solo</td>
+<td align="left">numeric</td>
+<td align="left">Total number of solo tackles for this player</td>
+</tr>
+<tr class="odd">
+<td align="left">def_tackles_with_assist</td>
+<td align="left">numeric</td>
+<td align="left">Number of tackles this player had with an assisted
+tackle</td>
+</tr>
+<tr class="even">
+<td align="left">def_tackle_assists</td>
+<td align="left">numeric</td>
+<td align="left">Number of assisted tackles for this player</td>
+</tr>
+<tr class="odd">
+<td align="left">def_tackles_for_loss</td>
+<td align="left">numeric</td>
+<td align="left">Number of tackles for loss (TFL) for this player</td>
+</tr>
+<tr class="even">
+<td align="left">def_tackles_for_loss_yards</td>
+<td align="left">numeric</td>
+<td align="left">Yards lost from TFLs involving this player</td>
+</tr>
+<tr class="odd">
+<td align="left">def_fumbles_forced</td>
+<td align="left">numeric</td>
+<td align="left">Number of times a fumble was forced from this
+player</td>
+</tr>
+<tr class="even">
+<td align="left">def_sacks</td>
+<td align="left">numeric</td>
+<td align="left">Number of sacks form this player</td>
+</tr>
+<tr class="odd">
+<td align="left">def_sack_yards</td>
+<td align="left">numeric</td>
+<td align="left">Yards lost from sacks forced by this player</td>
+</tr>
+<tr class="even">
+<td align="left">def_qb_hits</td>
+<td align="left">numeric</td>
+<td align="left">Number of QB hits from this player (should not include
+plays where the QB was sacked)</td>
+</tr>
+<tr class="odd">
+<td align="left">def_interceptions</td>
+<td align="left">numeric</td>
+<td align="left">Number of interceptions forced by this player</td>
+</tr>
+<tr class="even">
+<td align="left">def_interception_yards</td>
+<td align="left">numeric</td>
+<td align="left">yards gained/lost by interception returns from this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">def_pass_defended</td>
+<td align="left">numeric</td>
+<td align="left">Number of passes defended/broken up by this player</td>
+</tr>
+<tr class="even">
+<td align="left">def_tds</td>
+<td align="left">numeric</td>
+<td align="left">Number of defensive touchdowns scored by this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">def_fumbles</td>
+<td align="left">numeric</td>
+<td align="left">Number of fumbles by this player</td>
+</tr>
+<tr class="even">
+<td align="left">def_safeties</td>
+<td align="left">numeric</td>
+<td align="left">Number of safeties forced by this player</td>
+</tr>
+<tr class="odd">
+<td align="left">misc_yards</td>
+<td align="left">numeric</td>
+<td align="left">Miscellaneous yards attributed to this player</td>
+</tr>
+<tr class="even">
+<td align="left">fumble_recovery_own</td>
+<td align="left">numeric</td>
+<td align="left">Number of the player’s own team fumbles recovered</td>
+</tr>
+<tr class="odd">
+<td align="left">fumble_recovery_yards_own</td>
+<td align="left">numeric</td>
+<td align="left">Yards gained/lost on own fumble recoveries</td>
+</tr>
+<tr class="even">
+<td align="left">fumble_recovery_opp</td>
+<td align="left">numeric</td>
+<td align="left">Number of the opponent’s fumbles recovered</td>
+</tr>
+<tr class="odd">
+<td align="left">fumble_recovery_yards_opp</td>
+<td align="left">numeric</td>
+<td align="left">Yardage on opponent fumble recoveries</td>
+</tr>
+<tr class="even">
+<td align="left">fumble_recovery_tds</td>
+<td align="left">numeric</td>
+<td align="left">Fumbles recovered and advanced for a touchdown</td>
+</tr>
+<tr class="odd">
+<td align="left">penalties</td>
+<td align="left">numeric</td>
+<td align="left">Number of penalties attributed to this player</td>
+</tr>
+<tr class="even">
+<td align="left">penalty_yards</td>
+<td align="left">numeric</td>
+<td align="left">Penalty yardage on penalties attributed to this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">punt_returns</td>
+<td align="left">numeric</td>
+<td align="left">Count of punt returns by this player</td>
+</tr>
+<tr class="even">
+<td align="left">punt_return_yards</td>
+<td align="left">numeric</td>
+<td align="left">Yards gained on punts returned by this player</td>
+</tr>
+<tr class="odd">
+<td align="left">kickoff_returns</td>
+<td align="left">numeric</td>
+<td align="left">Count of kick returns by this player</td>
+</tr>
+<tr class="even">
+<td align="left">kickoff_return_yards</td>
+<td align="left">numeric</td>
+<td align="left">Yards gained on kick returns by this player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_made</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals made by this player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_att</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals attempted by this player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_missed</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals missed by this player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_blocked</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals attempted by this player that were
+blocked</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_long</td>
+<td align="left">numeric</td>
+<td align="left">Longest successful field goal made by this player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_pct</td>
+<td align="left">numeric</td>
+<td align="left">Percentage of field goals successfully made</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_made_0_19</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals within 0-19 yards made by this
+player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_made_20_29</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals within 20-29 yards made by this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_made_30_39</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals within 30-39 yards made by this
+player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_made_40_49</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals within 40-49 yards made by this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_made_50_59</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals within 50-59 yards made by this
+player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_made_60_</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals over 60 yards made by this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_missed_0_19</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals missed between 0-19 yards by this
+player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_missed_20_29</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals missed between 20-29 yards by this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_missed_30_39</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals missed between 30-39 yards by this
+player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_missed_40_49</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals missed between 40-49 yards by this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_missed_50_59</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals missed between 50-59 yards by this
+player</td>
+</tr>
+<tr class="even">
+<td align="left">fg_missed_60_</td>
+<td align="left">numeric</td>
+<td align="left">Count of field goals missed over 60 yards by this
+player</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_made_list</td>
+<td align="left">character</td>
+<td align="left">Comma-separated string listing lengths of field goals
+made</td>
+</tr>
+<tr class="even">
+<td align="left">fg_missed_list</td>
+<td align="left">character</td>
+<td align="left">Comma-separated string listing lengths of field goals
+missed</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_blocked_list</td>
+<td align="left">character</td>
+<td align="left">Comma-separated string listing lengths of field goals
+blocked</td>
+</tr>
+<tr class="even">
+<td align="left">fg_made_distance</td>
+<td align="left">numeric</td>
+<td align="left">Total distance on field goals made</td>
+</tr>
+<tr class="odd">
+<td align="left">fg_missed_distance</td>
+<td align="left">numeric</td>
+<td align="left">Total distance on field goals missed</td>
+</tr>
+<tr class="even">
+<td align="left">fg_blocked_distance</td>
+<td align="left">numeric</td>
+<td align="left">Total distance on field goals blocked</td>
+</tr>
+<tr class="odd">
+<td align="left">pat_made</td>
+<td align="left">numeric</td>
+<td align="left">Count of extra point kicks made</td>
+</tr>
+<tr class="even">
+<td align="left">pat_att</td>
+<td align="left">numeric</td>
+<td align="left">Count of extra point kicks attempted</td>
+</tr>
+<tr class="odd">
+<td align="left">pat_missed</td>
+<td align="left">numeric</td>
+<td align="left">Count of extra point kicks missed</td>
+</tr>
+<tr class="even">
+<td align="left">pat_blocked</td>
+<td align="left">numeric</td>
+<td align="left">Count of extra point kicks blocked</td>
+</tr>
+<tr class="odd">
+<td align="left">pat_pct</td>
+<td align="left">numeric</td>
+<td align="left">Percentage of extra point kicks successfully
+completed</td>
+</tr>
+<tr class="even">
+<td align="left">gwfg_made</td>
+<td align="left">numeric</td>
+<td align="left">Count of game winning field goals made</td>
+</tr>
+<tr class="odd">
+<td align="left">gwfg_att</td>
+<td align="left">numeric</td>
+<td align="left">Count of game winning field goals attempted</td>
+</tr>
+<tr class="even">
+<td align="left">gwfg_missed</td>
+<td align="left">numeric</td>
+<td align="left">Count of game winning field goals missed</td>
+</tr>
+<tr class="odd">
+<td align="left">gwfg_blocked</td>
+<td align="left">numeric</td>
+<td align="left">Count of game winning field goals blocked</td>
+</tr>
+<tr class="even">
+<td align="left">gwfg_distance</td>
+<td align="left">numeric</td>
+<td align="left">Total distance on game winning field goals
+completed</td>
+</tr>
+<tr class="odd">
+<td align="left">fantasy_points</td>
+<td align="left">numeric</td>
+<td align="left">Standard fantasy points.</td>
+</tr>
+<tr class="even">
+<td align="left">fantasy_points_ppr</td>
+<td align="left">numeric</td>
+<td align="left">PPR fantasy points.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

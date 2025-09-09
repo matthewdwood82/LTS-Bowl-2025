@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+<title>Data Dictionary - FF Opportunity</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Data Dictionary - FF Opportunity</h1>
+
+
+
+<table>
+<colgroup>
+<col width="8%" />
+<col width="2%" />
+<col width="7%" />
+<col width="80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Field</th>
+<th align="left">Type</th>
+<th align="left">Dataframe</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">game_id</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, pbp_pass, weekly</td>
+<td align="left">Ten digit identifier for NFL game.</td>
+</tr>
+<tr class="even">
+<td align="left">desc</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Detailed string description for the given play.</td>
+</tr>
+<tr class="odd">
+<td align="left">rusher_player_id</td>
+<td align="left">character</td>
+<td align="left">pbp_rush</td>
+<td align="left">Unique identifier for the player that attempted the
+run.</td>
+</tr>
+<tr class="even">
+<td align="left">full_name</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, weekly</td>
+<td align="left">Full name as per NFL.com</td>
+</tr>
+<tr class="odd">
+<td align="left">posteam</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, pbp_pass, weekly</td>
+<td align="left">String abbreviation for the team with possession.</td>
+</tr>
+<tr class="even">
+<td align="left">posteam_type</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">String indicating whether the posteam team is home or
+away.</td>
+</tr>
+<tr class="odd">
+<td align="left">run_location</td>
+<td align="left">character</td>
+<td align="left">pbp_rush</td>
+<td align="left">String indicator for location of run: left, middle, or
+right.</td>
+</tr>
+<tr class="even">
+<td align="left">run_gap</td>
+<td align="left">character</td>
+<td align="left">pbp_rush</td>
+<td align="left">String indicator for line gap of run: end, guard, or
+tackle</td>
+</tr>
+<tr class="odd">
+<td align="left">run_gap_dir</td>
+<td align="left">character</td>
+<td align="left">pbp_rush</td>
+<td align="left">Combines run gap and direction, e.g. left guard</td>
+</tr>
+<tr class="even">
+<td align="left">surface</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">What type of ground the game was played on. (Source:
+Pro-Football-Reference)</td>
+</tr>
+<tr class="odd">
+<td align="left">roof</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">One of ‘dome’, ‘outdoors’, ‘closed’, ‘open’ indicating
+indicating the roof status of the stadium the game was played in.
+(Source: Pro-Football-Reference)</td>
+</tr>
+<tr class="even">
+<td align="left">position</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, weekly</td>
+<td align="left">Primary position as reported by NFL.com</td>
+</tr>
+<tr class="odd">
+<td align="left">era</td>
+<td align="left">character</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">one of pre2018 (2006-2017) or post2018 (2018+)</td>
+</tr>
+<tr class="even">
+<td align="left">rush_touchdown</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush</td>
+<td align="left">Binary indicator for if the play resulted in a rushing
+TD.</td>
+</tr>
+<tr class="odd">
+<td align="left">first_down</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Binary indicator if the play ended in a first
+down.</td>
+</tr>
+<tr class="even">
+<td align="left">qtr</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Quarter of the game (5 is overtime).</td>
+</tr>
+<tr class="odd">
+<td align="left">down</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">The down for the given play.</td>
+</tr>
+<tr class="even">
+<td align="left">goal_to_go</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Binary indicator for whether or not the posteam is in a
+goal down situation.</td>
+</tr>
+<tr class="odd">
+<td align="left">shotgun</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Binary indicator for whether or not the play was in
+shotgun formation.</td>
+</tr>
+<tr class="even">
+<td align="left">no_huddle</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Binary indicator for whether or not the play was in
+no_huddle formation.</td>
+</tr>
+<tr class="odd">
+<td align="left">qb_dropback</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush</td>
+<td align="left">Binary indicator for whether or not the QB dropped back
+on the play (pass attempt, sack, or scrambled).</td>
+</tr>
+<tr class="even">
+<td align="left">qb_scramble</td>
+<td align="left">factor</td>
+<td align="left">pbp_rush</td>
+<td align="left">Binary indicator for whether or not the QB
+scrambled.</td>
+</tr>
+<tr class="odd">
+<td align="left">play_id</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Numeric play id that when used with game_id and drive
+provides the unique identifier for a single play.</td>
+</tr>
+<tr class="even">
+<td align="left">two_point_attempt</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Binary indicator for two point conversion attempt.</td>
+</tr>
+<tr class="odd">
+<td align="left">two_point_converted</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">A binary for whether a two point conversion was
+successful on this play</td>
+</tr>
+<tr class="even">
+<td align="left">rush_attempt</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, weekly</td>
+<td align="left">Binary indicator for if the play was a run.</td>
+</tr>
+<tr class="odd">
+<td align="left">first_down_rush</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush</td>
+<td align="left">Binary indicator for if a running play converted the
+first down.</td>
+</tr>
+<tr class="even">
+<td align="left">fumble_lost</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Binary indicator for if the fumble was lost.</td>
+</tr>
+<tr class="odd">
+<td align="left">season</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass, weekly</td>
+<td align="left">4 digit number indicating to which season the game
+belongs to.</td>
+</tr>
+<tr class="even">
+<td align="left">week</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass, weekly</td>
+<td align="left">Season week.</td>
+</tr>
+<tr class="odd">
+<td align="left">rushing_yards</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush</td>
+<td align="left">Numeric yards by the rusher_player_name, excluding
+yards gained in rush plays with laterals. This should equal official
+rushing statistics but could miss yards gained in rush plays with
+laterals. Please see the description of
+<code>lateral_rusher_player_name</code> for further information.</td>
+</tr>
+<tr class="even">
+<td align="left">wind</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">The speed of the wind in miles/hour only for ‘roof’ =
+‘outdoors’ or ‘open’. (Source: Pro-Football-Reference)</td>
+</tr>
+<tr class="odd">
+<td align="left">temp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">The temperature at the stadium only for ‘roof’ =
+‘outdoors’ or ‘open’.(Source: Pro-Football-Reference)</td>
+</tr>
+<tr class="even">
+<td align="left">yardline_100</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Numeric distance in the number of yards from the
+opponent’s endzone for the posteam.</td>
+</tr>
+<tr class="odd">
+<td align="left">half_seconds_remaining</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Numeric seconds remaining in the half.</td>
+</tr>
+<tr class="even">
+<td align="left">game_seconds_remaining</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Numeric seconds remaining in the game.</td>
+</tr>
+<tr class="odd">
+<td align="left">fixed_drive</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Manually created drive number in a game.</td>
+</tr>
+<tr class="even">
+<td align="left">xpass</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Probability of dropback scaled from 0 to 1.</td>
+</tr>
+<tr class="odd">
+<td align="left">ydstogo</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Numeric yards in distance from either the first down
+marker or the endzone in goal down situations.</td>
+</tr>
+<tr class="even">
+<td align="left">score_differential</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Score differential between the posteam and defteam at
+the start of the play.</td>
+</tr>
+<tr class="odd">
+<td align="left">ep</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Using the scoring event probabilities, the estimated
+expected points with respect to the possession team for the given
+play.</td>
+</tr>
+<tr class="even">
+<td align="left">vegas_wp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Estimated win probabiity for the posteam given the
+current situation at the start of the given play, incorporating pre-game
+Vegas line.</td>
+</tr>
+<tr class="odd">
+<td align="left">implied_total</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">The total number of points a team is expected to score
+in a game according to Vegas lines (spread and over/under)</td>
+</tr>
+<tr class="even">
+<td align="left">rush_yards_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush</td>
+<td align="left">Expected number of rush_yards in this game (weekly) or
+on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_touchdown_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, weekly</td>
+<td align="left">Expected number of rush_touchdown in this game (weekly)
+or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">rush_first_down_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, weekly</td>
+<td align="left">Expected number of rush_first_down in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">two_point_conv_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_rush, pbp_pass</td>
+<td align="left">Expected number of two_point_conv in this game (weekly)
+or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">passer_player_id</td>
+<td align="left">character</td>
+<td align="left">pbp_pass</td>
+<td align="left">Unique identifier for the player that attempted the
+pass.</td>
+</tr>
+<tr class="odd">
+<td align="left">passer_full_name</td>
+<td align="left">character</td>
+<td align="left">pbp_pass</td>
+<td align="left">Full name of the passer as found within
+nflreadr::load_rosters</td>
+</tr>
+<tr class="even">
+<td align="left">passer_position</td>
+<td align="left">character</td>
+<td align="left">pbp_pass</td>
+<td align="left">Position designation of the passer as found within
+nflreadr::load_rosters</td>
+</tr>
+<tr class="odd">
+<td align="left">receiver_player_id</td>
+<td align="left">character</td>
+<td align="left">pbp_pass</td>
+<td align="left">Unique identifier for the receiver that was targeted on
+the pass.</td>
+</tr>
+<tr class="even">
+<td align="left">receiver_full_name</td>
+<td align="left">character</td>
+<td align="left">pbp_pass</td>
+<td align="left">Full name of the receiver as found within
+nflreadr::load_rosters</td>
+</tr>
+<tr class="odd">
+<td align="left">receiver_position</td>
+<td align="left">character</td>
+<td align="left">pbp_pass</td>
+<td align="left">Position designation of the receiver as found within
+nflreadr::load_rosters</td>
+</tr>
+<tr class="even">
+<td align="left">pass_location</td>
+<td align="left">character</td>
+<td align="left">pbp_pass</td>
+<td align="left">String indicator for pass location: left, middle, or
+right.</td>
+</tr>
+<tr class="odd">
+<td align="left">complete_pass</td>
+<td align="left">factor</td>
+<td align="left">pbp_pass</td>
+<td align="left">Binary indicator for if the pass was completed.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_touchdown</td>
+<td align="left">factor</td>
+<td align="left">pbp_pass</td>
+<td align="left">Binary indicator for if the play resulted in a passing
+TD.</td>
+</tr>
+<tr class="odd">
+<td align="left">interception</td>
+<td align="left">factor</td>
+<td align="left">pbp_pass</td>
+<td align="left">Binary indicator for if the pass was intercepted.</td>
+</tr>
+<tr class="even">
+<td align="left">qb_hit</td>
+<td align="left">factor</td>
+<td align="left">pbp_pass</td>
+<td align="left">Binary indicator if the QB was hit on the play.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_attempt</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass, weekly</td>
+<td align="left">Binary indicator for if the play was a pass attempt
+(includes sacks).</td>
+</tr>
+<tr class="even">
+<td align="left">receiving_yards</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Numeric yards by the receiver_player_name, excluding
+yards gained in pass plays with laterals. This should equal official
+receiving statistics but could miss yards gained in pass plays with
+laterals. Please see the description of
+<code>lateral_receiver_player_name</code> for further information.</td>
+</tr>
+<tr class="odd">
+<td align="left">first_down_pass</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Binary indicator for if a passing play converted the
+first down.</td>
+</tr>
+<tr class="even">
+<td align="left">yards_after_catch</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Numeric value for distance in yards perpendicular to
+the yard line where the receiver made the reception to where the play
+ended.</td>
+</tr>
+<tr class="odd">
+<td align="left">relative_to_endzone</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Numeric distance from the target location to the
+endzone, with negative values meaning ‘short of the endzone by X
+distance’</td>
+</tr>
+<tr class="even">
+<td align="left">total_line</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">The closing total line for the game. (Source:
+Pro-Football-Reference)</td>
+</tr>
+<tr class="odd">
+<td align="left">relative_to_sticks</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Numeric distance from the target location to the first
+down line to gain, with negative values meaning ‘short of the sticks’
+and positive values meaning ‘beyond the sticks’</td>
+</tr>
+<tr class="even">
+<td align="left">air_yards</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Numeric value for distance in yards perpendicular to
+the line of scrimmage at where the targeted receiver either caught or
+didn’t catch the ball.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_completion_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Expected number of pass_completion in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">yards_after_catch_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Expected number of yards_after_catch in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">yardline_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass</td>
+<td align="left">Expected number of yardline in this game (weekly) or on
+this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">pass_touchdown_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass, weekly</td>
+<td align="left">Expected number of pass_touchdown in this game (weekly)
+or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_first_down_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass, weekly</td>
+<td align="left">Expected number of pass_first_down in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">pass_interception_exp</td>
+<td align="left">numeric</td>
+<td align="left">pbp_pass, weekly</td>
+<td align="left">Expected number of pass_interception in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">player_id</td>
+<td align="left">character</td>
+<td align="left">weekly</td>
+<td align="left">Player ID (aka GSIS ID) as defined by
+nflreadr::load_rosters</td>
+</tr>
+<tr class="even">
+<td align="left">rec_attempt</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total number of targets for a given game</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_air_yards</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total air yards thrown for a given game</td>
+</tr>
+<tr class="even">
+<td align="left">rec_air_yards</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total air yards on receiving attempts for a given
+game</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_completions</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of successful completions for a given game</td>
+</tr>
+<tr class="even">
+<td align="left">receptions</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total catches for a game.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_completions_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of pass_completions in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">receptions_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of receptions in this game (weekly) or
+on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_yards_gained</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total passing yards gained for a given game</td>
+</tr>
+<tr class="even">
+<td align="left">rec_yards_gained</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total receiving yards gained for a given game</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_yards_gained</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total rushing yards gained for a given game</td>
+</tr>
+<tr class="even">
+<td align="left">pass_yards_gained_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of pass_yards_gained in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_yards_gained_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rec_yards_gained in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">rush_yards_gained_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rush_yards_gained in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_touchdown</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total passing touchdowns</td>
+</tr>
+<tr class="even">
+<td align="left">rec_touchdown</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total receiving touchdowns</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_touchdown</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total rushing touchdowns</td>
+</tr>
+<tr class="even">
+<td align="left">rec_touchdown_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rec_touchdown in this game (weekly)
+or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_two_point_conv</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of successful passing two point conversions</td>
+</tr>
+<tr class="even">
+<td align="left">rec_two_point_conv</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of successful receiving two point
+conversions</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_two_point_conv</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of successful rushing two point conversions</td>
+</tr>
+<tr class="even">
+<td align="left">pass_two_point_conv_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of pass_two_point_conv in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_two_point_conv_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rec_two_point_conv in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">rush_two_point_conv_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rush_two_point_conv in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_first_down</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of passing first downs</td>
+</tr>
+<tr class="even">
+<td align="left">rec_first_down</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of receiving first downs</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_first_down</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of rushing first downs</td>
+</tr>
+<tr class="even">
+<td align="left">rec_first_down_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rec_first_down in this game (weekly)
+or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_interception</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of interceptions thrown</td>
+</tr>
+<tr class="even">
+<td align="left">rec_interception</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of interceptions on targets</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_interception_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rec_interception in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">rec_fumble_lost</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of fumbles on receiving attempts</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_fumble_lost</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Number of fumbles on rushing attempts</td>
+</tr>
+<tr class="even">
+<td align="left">pass_fantasy_points_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of pass_fantasy_points in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_fantasy_points_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rec_fantasy_points in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">rush_fantasy_points_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of rush_fantasy_points in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_fantasy_points</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total fantasy points from passing, assuming 0.04 points
+per pass yard, 4 points per pass TD, -2 points per interception</td>
+</tr>
+<tr class="even">
+<td align="left">rec_fantasy_points</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total fantasy points from receiving, assuming PPR
+scoring</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_fantasy_points</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total fantasy points from rushing, assuming PPR
+scoring</td>
+</tr>
+<tr class="even">
+<td align="left">total_yards_gained</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total scrimmage yards (sum of pass, rush, and receiving
+yards)</td>
+</tr>
+<tr class="odd">
+<td align="left">total_yards_gained_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of total_yards_gained in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">total_touchdown</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total touchdowns (sum of pass, rush, and receiving
+touchdowns)</td>
+</tr>
+<tr class="odd">
+<td align="left">total_touchdown_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of total_touchdown in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">total_first_down</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total first downs (sum of pass, rush, and receiving
+first downs)</td>
+</tr>
+<tr class="odd">
+<td align="left">total_first_down_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of total_first_down in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">total_fantasy_points</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Total fantasy points (sum of pass, rush, and receiving
+fantasy points)</td>
+</tr>
+<tr class="odd">
+<td align="left">total_fantasy_points_exp</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Expected number of total_fantasy_points in this game
+(weekly) or on this play (pbp_rush/pbp_pass) given situation</td>
+</tr>
+<tr class="even">
+<td align="left">pass_completions_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+pass_completions - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">receptions_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+receptions - often interpreted as efficiency for a given play/game</td>
+</tr>
+<tr class="even">
+<td align="left">pass_yards_gained_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+pass_yards_gained - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_yards_gained_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rec_yards_gained - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">rush_yards_gained_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rush_yards_gained - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_touchdown_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+pass_touchdown - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">rec_touchdown_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rec_touchdown - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_touchdown_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rush_touchdown - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">pass_two_point_conv_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+pass_two_point_conv - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_two_point_conv_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rec_two_point_conv - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">rush_two_point_conv_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rush_two_point_conv - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_first_down_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+pass_first_down - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">rec_first_down_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rec_first_down - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_first_down_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rush_first_down - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">pass_interception_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+pass_interception - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_interception_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rec_interception - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">pass_fantasy_points_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+pass_fantasy_points - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_fantasy_points_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rec_fantasy_points - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">rush_fantasy_points_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+rush_fantasy_points - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">total_yards_gained_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+total_yards_gained - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">total_touchdown_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+total_touchdown - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">total_first_down_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+total_first_down - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="even">
+<td align="left">total_fantasy_points_diff</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Difference between actual and expected number of
+total_fantasy_points - often interpreted as efficiency for a given
+play/game</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_attempt_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_attempt for a game, summed across
+all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_attempt_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_attempt for a game, summed across
+all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_attempt_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rush_attempt for a game, summed across
+all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_air_yards_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_air_yards for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_air_yards_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_air_yards for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_completions_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_completions for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">receptions_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total receptions for a game, summed across
+all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_completions_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected pass_completions_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">receptions_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected receptions_exp for a game,
+summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_yards_gained_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_yards_gained for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_yards_gained_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_yards_gained for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_yards_gained_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rush_yards_gained for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_yards_gained_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected pass_yards_gained_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_yards_gained_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rec_yards_gained_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_yards_gained_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rush_yards_gained_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_touchdown_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_touchdown for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_touchdown_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_touchdown for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_touchdown_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rush_touchdown for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_touchdown_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected pass_touchdown_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_touchdown_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rec_touchdown_exp for a game,
+summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_touchdown_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rush_touchdown_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_two_point_conv_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_two_point_conv for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_two_point_conv_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_two_point_conv for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_two_point_conv_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rush_two_point_conv for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_two_point_conv_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected pass_two_point_conv_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_two_point_conv_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rec_two_point_conv_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_two_point_conv_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rush_two_point_conv_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_first_down_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_first_down for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_first_down_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_first_down for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_first_down_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rush_first_down for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_first_down_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected pass_first_down_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_first_down_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rec_first_down_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_first_down_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rush_first_down_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_interception_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_interception for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_interception_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_interception for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_interception_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected pass_interception_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_interception_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rec_interception_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_fumble_lost_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_fumble_lost for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_fumble_lost_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rush_fumble_lost for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_fantasy_points_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected pass_fantasy_points_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_fantasy_points_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rec_fantasy_points_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_fantasy_points_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected rush_fantasy_points_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_fantasy_points_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total pass_fantasy_points for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_fantasy_points_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rec_fantasy_points for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_fantasy_points_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total rush_fantasy_points for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">total_yards_gained_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total total_yards_gained for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">total_yards_gained_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected total_yards_gained_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">total_touchdown_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total total_touchdown for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">total_touchdown_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected total_touchdown_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">total_first_down_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total total_first_down for a game, summed
+across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">total_first_down_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected total_first_down_exp for a
+game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">total_fantasy_points_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total total_fantasy_points for a game,
+summed across all plays/players for that team.</td>
+</tr>
+<tr class="odd">
+<td align="left">total_fantasy_points_exp_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level total expected total_fantasy_points_exp for
+a game, summed across all plays &amp; players for that team.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_completions_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of pass_completions_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">receptions_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of receptions_diff for a game, summed across all plays/players
+for that team. Often interpreted as team-level efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_yards_gained_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of pass_yards_gained_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_yards_gained_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rec_yards_gained_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_yards_gained_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rush_yards_gained_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_touchdown_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of pass_touchdown_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_touchdown_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rec_touchdown_diff for a game, summed across all plays/players
+for that team. Often interpreted as team-level efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_touchdown_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rush_touchdown_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_two_point_conv_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of pass_two_point_conv_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_two_point_conv_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rec_two_point_conv_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_two_point_conv_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rush_two_point_conv_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">pass_first_down_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of pass_first_down_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">rec_first_down_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rec_first_down_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">rush_first_down_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rush_first_down_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_interception_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of pass_interception_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_interception_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rec_interception_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">pass_fantasy_points_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of pass_fantasy_points_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">rec_fantasy_points_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rec_fantasy_points_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">rush_fantasy_points_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of rush_fantasy_points_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">total_yards_gained_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of total_yards_gained_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">total_touchdown_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of total_touchdown_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="odd">
+<td align="left">total_first_down_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of total_first_down_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+<tr class="even">
+<td align="left">total_fantasy_points_diff_team</td>
+<td align="left">numeric</td>
+<td align="left">weekly</td>
+<td align="left">Team-level difference between actual and expected
+number of total_fantasy_points_diff for a game, summed across all
+plays/players for that team. Often interpreted as team-level
+efficiency.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

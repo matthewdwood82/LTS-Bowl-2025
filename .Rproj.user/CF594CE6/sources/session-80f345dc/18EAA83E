@@ -1,0 +1,26 @@
+{
+    "id": "18EAA83E",
+    "path": "C:/devspace/LTS-Bowl-2025/.github/workflows/update-scores.yml",
+    "project_path": ".github/workflows/update-scores.yml",
+    "type": "yaml",
+    "hash": "449536457",
+    "contents": "",
+    "dirty": false,
+    "created": 1757333452575.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "27,35",
+        "scrollLine": "22"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1757336471,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1757336471466,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,26 @@
+{
+    "id": "0A515794",
+    "path": "C:/devspace/LTS-Bowl-2025/R/get_scores.R",
+    "project_path": "R/get_scores.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1757333801505.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "299,0",
+        "scrollLine": "240"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1757337348,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1757337348859,
+    "read_only": false,
+    "read_only_alternatives": []
+}
