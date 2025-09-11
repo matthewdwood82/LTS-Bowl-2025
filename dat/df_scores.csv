@@ -1,97 +1,49 @@
 league,week,franchise_id,franchise_score,opponent_id,opponent_score,result,diff_score,diff_rank,total_score,total_rank,franchise_name,user_name,franchise_name_opponent,user_name_opponent
 LTS Bowl L1,1,1,141.15,5,189.15,L,48,3,330.3,2,Mouth Kazoo Maestros,Weagle85,High Tea,OhShagHennessy
-LTS Bowl L1,1,2,129.05,8,147.4,L,18.349999999999994,14,276.45000000000005,18,Golf Cartin',stephensear,Bad Faith Fantasy,cptbeefalo
+LTS Bowl L1,1,2,129.05,8,147.4,L,18.35,14,276.45,18,Golf Cartin',stephensear,Bad Faith Fantasy,cptbeefalo
 LTS Bowl L1,1,3,141.2,12,142.95,L,1.75,24,284.15,15,THE KIDS,CommieEsq,MikeDavisThrupple,DavisDayCare
-LTS Bowl L1,1,4,142.7,9,134.25,W,8.449999999999989,20,276.95,17,DeadEndFriends,DeadEndFriends,Not Great Bob,tommcg17
+LTS Bowl L1,1,4,142.7,9,134.25,W,8.45,20,276.95,17,DeadEndFriends,DeadEndFriends,Not Great Bob,tommcg17
 LTS Bowl L1,1,5,189.15,1,141.15,W,48,3,330.3,2,High Tea,OhShagHennessy,Mouth Kazoo Maestros,Weagle85
-LTS Bowl L1,1,6,156.5,11,137.35,W,19.150000000000006,13,293.85,11,Diarrhea Happens,bartonscott84,Klabbertrap,Klabbertrap
-LTS Bowl L1,1,7,144.35,10,114.5,W,29.849999999999994,8,258.85,21,Week 3 Meat Mountain,PossumKingdom,Vandelay Industries,DGo81
-LTS Bowl L1,1,8,147.4,2,129.05,W,18.349999999999994,14,276.45000000000005,18,Bad Faith Fantasy,cptbeefalo,Golf Cartin',stephensear
-LTS Bowl L1,1,9,134.25,4,142.7,L,8.449999999999989,20,276.95,17,Not Great Bob,tommcg17,DeadEndFriends,DeadEndFriends
-LTS Bowl L1,1,10,114.5,7,144.35,L,29.849999999999994,8,258.85,21,Vandelay Industries,DGo81,Week 3 Meat Mountain,PossumKingdom
-LTS Bowl L1,1,11,137.35,6,156.5,L,19.150000000000006,13,293.85,11,Klabbertrap,Klabbertrap,Diarrhea Happens,bartonscott84
+LTS Bowl L1,1,6,156.5,11,137.35,W,19.15,13,293.85,11,Diarrhea Happens,bartonscott84,Klabbertrap,Klabbertrap
+LTS Bowl L1,1,7,144.35,10,114.5,W,29.85,8,258.85,21,Week 3 Meat Mountain,PossumKingdom,Vandelay Industries,DGo81
+LTS Bowl L1,1,8,147.4,2,129.05,W,18.35,14,276.45,18,Bad Faith Fantasy,cptbeefalo,Golf Cartin',stephensear
+LTS Bowl L1,1,9,134.25,4,142.7,L,8.45,20,276.95,17,Not Great Bob,tommcg17,DeadEndFriends,DeadEndFriends
+LTS Bowl L1,1,10,114.5,7,144.35,L,29.85,8,258.85,21,Vandelay Industries,DGo81,Week 3 Meat Mountain,PossumKingdom
+LTS Bowl L1,1,11,137.35,6,156.5,L,19.15,13,293.85,11,Klabbertrap,Klabbertrap,Diarrhea Happens,bartonscott84
 LTS Bowl L1,1,12,142.95,3,141.2,W,1.75,24,284.15,15,MikeDavisThrupple,DavisDayCare,THE KIDS,CommieEsq
-LTS Bowl L1,2,1,0,7,0,NA,0,25,0,25,Mouth Kazoo Maestros,Weagle85,Week 3 Meat Mountain,PossumKingdom
-LTS Bowl L1,2,2,0,6,0,NA,0,25,0,25,Golf Cartin',stephensear,Diarrhea Happens,bartonscott84
-LTS Bowl L1,2,3,0,4,0,NA,0,25,0,25,THE KIDS,CommieEsq,DeadEndFriends,DeadEndFriends
-LTS Bowl L1,2,4,0,3,0,NA,0,25,0,25,DeadEndFriends,DeadEndFriends,THE KIDS,CommieEsq
-LTS Bowl L1,2,5,0,10,0,NA,0,25,0,25,High Tea,OhShagHennessy,Vandelay Industries,DGo81
-LTS Bowl L1,2,6,0,2,0,NA,0,25,0,25,Diarrhea Happens,bartonscott84,Golf Cartin',stephensear
-LTS Bowl L1,2,7,0,1,0,NA,0,25,0,25,Week 3 Meat Mountain,PossumKingdom,Mouth Kazoo Maestros,Weagle85
-LTS Bowl L1,2,8,0,11,0,NA,0,25,0,25,Bad Faith Fantasy,cptbeefalo,Klabbertrap,Klabbertrap
-LTS Bowl L1,2,9,0,12,0,NA,0,25,0,25,Not Great Bob,tommcg17,MikeDavisThrupple,DavisDayCare
-LTS Bowl L1,2,10,0,5,0,NA,0,25,0,25,Vandelay Industries,DGo81,High Tea,OhShagHennessy
-LTS Bowl L1,2,11,0,8,0,NA,0,25,0,25,Klabbertrap,Klabbertrap,Bad Faith Fantasy,cptbeefalo
-LTS Bowl L1,2,12,0,9,0,NA,0,25,0,25,MikeDavisThrupple,DavisDayCare,Not Great Bob,tommcg17
 LTS Bowl L2,1,1,120.65,11,157.15,L,36.5,5,277.8,16,fantasyscott,fantasyscott,Horsey Sauce,FeelingDangerouz
-LTS Bowl L2,1,2,156.65,4,166.05,L,9.400000000000006,19,322.70000000000005,5,aspires,aspires,The Huge Mistaeks,RipSlabcheek
+LTS Bowl L2,1,2,156.65,4,166.05,L,9.4,19,322.7,5,aspires,aspires,The Huge Mistaeks,RipSlabcheek
 LTS Bowl L2,1,3,148.3,12,140.3,W,8,22,288.6,12,Randomizer Interns,matthewdwood82,Edina Cake Eaters,ecsirkin
-LTS Bowl L2,1,4,166.05,2,156.65,W,9.400000000000006,19,322.70000000000005,5,The Huge Mistaeks,RipSlabcheek,aspires,aspires
-LTS Bowl L2,1,5,161.7,7,176.5,L,14.800000000000011,15,338.2,1,SOTBD,SOTBD,Natanab,Natanab
-LTS Bowl L2,1,6,103.05,10,116.25,L,13.200000000000003,17,219.3,24,Kendradhl,Kendradhl,Duluth Eskimos,GREGGELS17
-LTS Bowl L2,1,7,176.5,5,161.7,W,14.800000000000011,15,338.2,1,Natanab,Natanab,SOTBD,SOTBD
-LTS Bowl L2,1,8,138.3,9,163.1,L,24.799999999999983,10,301.4,8,kipahisbush,kipahisbush,Fozberry64,Fozberry64
-LTS Bowl L2,1,9,163.1,8,138.3,W,24.799999999999983,10,301.4,8,Fozberry64,Fozberry64,kipahisbush,kipahisbush
-LTS Bowl L2,1,10,116.25,6,103.05,W,13.200000000000003,17,219.3,24,Duluth Eskimos,GREGGELS17,Kendradhl,Kendradhl
+LTS Bowl L2,1,4,166.05,2,156.65,W,9.4,19,322.7,5,The Huge Mistaeks,RipSlabcheek,aspires,aspires
+LTS Bowl L2,1,5,161.7,7,176.5,L,14.8,15,338.2,1,SOTBD,SOTBD,Natanab,Natanab
+LTS Bowl L2,1,6,103.05,10,116.25,L,13.2,17,219.3,24,Kendradhl,Kendradhl,Duluth Eskimos,GREGGELS17
+LTS Bowl L2,1,7,176.5,5,161.7,W,14.8,15,338.2,1,Natanab,Natanab,SOTBD,SOTBD
+LTS Bowl L2,1,8,138.3,9,163.1,L,24.8,10,301.4,8,kipahisbush,kipahisbush,Fozberry64,Fozberry64
+LTS Bowl L2,1,9,163.1,8,138.3,W,24.8,10,301.4,8,Fozberry64,Fozberry64,kipahisbush,kipahisbush
+LTS Bowl L2,1,10,116.25,6,103.05,W,13.2,17,219.3,24,Duluth Eskimos,GREGGELS17,Kendradhl,Kendradhl
 LTS Bowl L2,1,11,157.15,1,120.65,W,36.5,5,277.8,16,Horsey Sauce,FeelingDangerouz,fantasyscott,fantasyscott
 LTS Bowl L2,1,12,140.3,3,148.3,L,8,22,288.6,12,Edina Cake Eaters,ecsirkin,Randomizer Interns,matthewdwood82
-LTS Bowl L2,2,1,0,7,0,NA,0,25,0,25,fantasyscott,fantasyscott,Natanab,Natanab
-LTS Bowl L2,2,2,0,10,0,NA,0,25,0,25,aspires,aspires,Duluth Eskimos,GREGGELS17
-LTS Bowl L2,2,3,0,8,0,NA,0,25,0,25,Randomizer Interns,matthewdwood82,kipahisbush,kipahisbush
-LTS Bowl L2,2,4,0,6,0,NA,0,25,0,25,The Huge Mistaeks,RipSlabcheek,Kendradhl,Kendradhl
-LTS Bowl L2,2,5,0,11,0,NA,0,25,0,25,SOTBD,SOTBD,Horsey Sauce,FeelingDangerouz
-LTS Bowl L2,2,6,0,4,0,NA,0,25,0,25,Kendradhl,Kendradhl,The Huge Mistaeks,RipSlabcheek
-LTS Bowl L2,2,7,0,1,0,NA,0,25,0,25,Natanab,Natanab,fantasyscott,fantasyscott
-LTS Bowl L2,2,8,0,3,0,NA,0,25,0,25,kipahisbush,kipahisbush,Randomizer Interns,matthewdwood82
-LTS Bowl L2,2,9,0,12,0,NA,0,25,0,25,Fozberry64,Fozberry64,Edina Cake Eaters,ecsirkin
-LTS Bowl L2,2,10,0,2,0,NA,0,25,0,25,Duluth Eskimos,GREGGELS17,aspires,aspires
-LTS Bowl L2,2,11,0,5,0,NA,0,25,0,25,Horsey Sauce,FeelingDangerouz,SOTBD,SOTBD
-LTS Bowl L2,2,12,0,9,0,NA,0,25,0,25,Edina Cake Eaters,ecsirkin,Fozberry64,Fozberry64
-The Only Legitimate LTS Bowl League - L3,1,1,176.15,3,148.1,W,28.05000000000001,9,324.25,4,Rice Suspened for 6 Games,DrWraith84,Speaks Kindly Holds Knife,Deredactyl
+The Only Legitimate LTS Bowl League - L3,1,1,176.15,3,148.1,W,28.05,9,324.25,4,Rice Suspened for 6 Games,DrWraith84,Speaks Kindly Holds Knife,Deredactyl
 The Only Legitimate LTS Bowl League - L3,1,2,138.95,12,149.45,L,10.5,18,288.4,13,jetsgnome22,jetsgnome22,johnnysmomskid,johnnysmomskid
-The Only Legitimate LTS Bowl League - L3,1,3,148.1,1,176.15,L,28.05000000000001,9,324.25,4,Speaks Kindly Holds Knife,Deredactyl,Rice Suspened for 6 Games,DrWraith84
+The Only Legitimate LTS Bowl League - L3,1,3,148.1,1,176.15,L,28.05,9,324.25,4,Speaks Kindly Holds Knife,Deredactyl,Rice Suspened for 6 Games,DrWraith84
 The Only Legitimate LTS Bowl League - L3,1,4,113.4,7,173.9,L,60.5,1,287.3,14,TurdFergusonFF,TurdFergusonFF,WilhelmTilt,ringular
 The Only Legitimate LTS Bowl League - L3,1,5,108.6,6,122.6,L,14,16,231.2,23,Purple Monkey Dishwasher ,alexewart,39ers,tripp39
 The Only Legitimate LTS Bowl League - L3,1,6,122.6,5,108.6,W,14,16,231.2,23,39ers,tripp39,Purple Monkey Dishwasher ,alexewart
 The Only Legitimate LTS Bowl League - L3,1,7,173.9,4,113.4,W,60.5,1,287.3,14,WilhelmTilt,ringular,TurdFergusonFF,TurdFergusonFF
-The Only Legitimate LTS Bowl League - L3,1,8,132.9,10,180.45,L,47.54999999999998,4,313.35,6,The Woke FAAB,reginaldo,Greenhorns,D3M090
+The Only Legitimate LTS Bowl League - L3,1,8,132.9,10,180.45,L,47.55,4,313.35,6,The Woke FAAB,reginaldo,Greenhorns,D3M090
 The Only Legitimate LTS Bowl League - L3,1,9,137.35,11,158.6,L,21.25,12,295.95,10,SycamoreFlynns,SycamoreFlynns,Closet Poopers,coots1185
-The Only Legitimate LTS Bowl League - L3,1,10,180.45,8,132.9,W,47.54999999999998,4,313.35,6,Greenhorns,D3M090,The Woke FAAB,reginaldo
+The Only Legitimate LTS Bowl League - L3,1,10,180.45,8,132.9,W,47.55,4,313.35,6,Greenhorns,D3M090,The Woke FAAB,reginaldo
 The Only Legitimate LTS Bowl League - L3,1,11,158.6,9,137.35,W,21.25,12,295.95,10,Closet Poopers,coots1185,SycamoreFlynns,SycamoreFlynns
 The Only Legitimate LTS Bowl League - L3,1,12,149.45,2,138.95,W,10.5,18,288.4,13,johnnysmomskid,johnnysmomskid,jetsgnome22,jetsgnome22
-The Only Legitimate LTS Bowl League - L3,2,1,0,4,0,NA,0,25,0,25,Rice Suspened for 6 Games,DrWraith84,TurdFergusonFF,TurdFergusonFF
-The Only Legitimate LTS Bowl League - L3,2,2,0,6,0,NA,0,25,0,25,jetsgnome22,jetsgnome22,39ers,tripp39
-The Only Legitimate LTS Bowl League - L3,2,3,0,7,0,NA,0,25,0,25,Speaks Kindly Holds Knife,Deredactyl,WilhelmTilt,ringular
-The Only Legitimate LTS Bowl League - L3,2,4,0,1,0,NA,0,25,0,25,TurdFergusonFF,TurdFergusonFF,Rice Suspened for 6 Games,DrWraith84
-The Only Legitimate LTS Bowl League - L3,2,5,0,12,0,NA,0,25,0,25,Purple Monkey Dishwasher ,alexewart,johnnysmomskid,johnnysmomskid
-The Only Legitimate LTS Bowl League - L3,2,6,0,2,0,NA,0,25,0,25,39ers,tripp39,jetsgnome22,jetsgnome22
-The Only Legitimate LTS Bowl League - L3,2,7,0,3,0,NA,0,25,0,25,WilhelmTilt,ringular,Speaks Kindly Holds Knife,Deredactyl
-The Only Legitimate LTS Bowl League - L3,2,8,0,11,0,NA,0,25,0,25,The Woke FAAB,reginaldo,Closet Poopers,coots1185
-The Only Legitimate LTS Bowl League - L3,2,9,0,10,0,NA,0,25,0,25,SycamoreFlynns,SycamoreFlynns,Greenhorns,D3M090
-The Only Legitimate LTS Bowl League - L3,2,10,0,9,0,NA,0,25,0,25,Greenhorns,D3M090,SycamoreFlynns,SycamoreFlynns
-The Only Legitimate LTS Bowl League - L3,2,11,0,8,0,NA,0,25,0,25,Closet Poopers,coots1185,The Woke FAAB,reginaldo
-The Only Legitimate LTS Bowl League - L3,2,12,0,5,0,NA,0,25,0,25,johnnysmomskid,johnnysmomskid,Purple Monkey Dishwasher ,alexewart
 LTS Bowl L4,1,1,125.85,12,174.1,L,48.25,2,299.95,9,Sweep the Leg,ctjoumas,outshine13,outshine13
-LTS Bowl L4,1,2,128.95,3,121.75,W,7.199999999999989,23,250.7,22,Ram it!,IreneTurner,The Lib Owners,nak97
-LTS Bowl L4,1,3,121.75,2,128.95,L,7.199999999999989,23,250.7,22,The Lib Owners,nak97,Ram it!,IreneTurner
-LTS Bowl L4,1,4,134.4,10,168.7,L,34.29999999999998,7,303.1,7,Chickpea Smoothie,apulianas,Searching for Stapler,Spencer
-LTS Bowl L4,1,5,120.05,6,155.8,L,35.750000000000014,6,275.85,19,The Glorious Process,armandoguzman,"Once again, I'm tilting ",arthurdantas
-LTS Bowl L4,1,6,155.8,5,120.05,W,35.750000000000014,6,275.85,19,"Once again, I'm tilting ",arthurdantas,The Glorious Process,armandoguzman
-LTS Bowl L4,1,7,132.3,8,140.35,L,8.049999999999983,21,272.65,20,Trailing Daler,teamdaler,NinerJay,NinerJay
-LTS Bowl L4,1,8,140.35,7,132.3,W,8.049999999999983,21,272.65,20,NinerJay,NinerJay,Trailing Daler,teamdaler
-LTS Bowl L4,1,9,152.3,11,175.7,L,23.399999999999977,11,328,3,crackofdawn321,crackofdawn321,Damn Fine Coffee,JoshWest
-LTS Bowl L4,1,10,168.7,4,134.4,W,34.29999999999998,7,303.1,7,Searching for Stapler,Spencer,Chickpea Smoothie,apulianas
-LTS Bowl L4,1,11,175.7,9,152.3,W,23.399999999999977,11,328,3,Damn Fine Coffee,JoshWest,crackofdawn321,crackofdawn321
+LTS Bowl L4,1,2,128.95,3,121.75,W,7.2,23,250.7,22,Ram it!,IreneTurner,The Lib Owners,nak97
+LTS Bowl L4,1,3,121.75,2,128.95,L,7.2,23,250.7,22,The Lib Owners,nak97,Ram it!,IreneTurner
+LTS Bowl L4,1,4,134.4,10,168.7,L,34.3,7,303.1,7,Chickpea Smoothie,apulianas,Searching for Stapler,Spencer
+LTS Bowl L4,1,5,120.05,6,155.8,L,35.75,6,275.85,19,The Glorious Process,armandoguzman,"Once again, I'm tilting ",arthurdantas
+LTS Bowl L4,1,6,155.8,5,120.05,W,35.75,6,275.85,19,"Once again, I'm tilting ",arthurdantas,The Glorious Process,armandoguzman
+LTS Bowl L4,1,7,132.3,8,140.35,L,8.05,21,272.65,20,Trailing Daler,teamdaler,NinerJay,NinerJay
+LTS Bowl L4,1,8,140.35,7,132.3,W,8.05,21,272.65,20,NinerJay,NinerJay,Trailing Daler,teamdaler
+LTS Bowl L4,1,9,152.3,11,175.7,L,23.4,11,328,3,crackofdawn321,crackofdawn321,Damn Fine Coffee,JoshWest
+LTS Bowl L4,1,10,168.7,4,134.4,W,34.3,7,303.1,7,Searching for Stapler,Spencer,Chickpea Smoothie,apulianas
+LTS Bowl L4,1,11,175.7,9,152.3,W,23.4,11,328,3,Damn Fine Coffee,JoshWest,crackofdawn321,crackofdawn321
 LTS Bowl L4,1,12,174.1,1,125.85,W,48.25,2,299.95,9,outshine13,outshine13,Sweep the Leg,ctjoumas
-LTS Bowl L4,2,1,0,2,0,NA,0,25,0,25,Sweep the Leg,ctjoumas,Ram it!,IreneTurner
-LTS Bowl L4,2,2,0,1,0,NA,0,25,0,25,Ram it!,IreneTurner,Sweep the Leg,ctjoumas
-LTS Bowl L4,2,3,0,12,0,NA,0,25,0,25,The Lib Owners,nak97,outshine13,outshine13
-LTS Bowl L4,2,4,0,11,0,NA,0,25,0,25,Chickpea Smoothie,apulianas,Damn Fine Coffee,JoshWest
-LTS Bowl L4,2,5,0,7,0,NA,0,25,0,25,The Glorious Process,armandoguzman,Trailing Daler,teamdaler
-LTS Bowl L4,2,6,0,8,0,NA,0,25,0,25,"Once again, I'm tilting ",arthurdantas,NinerJay,NinerJay
-LTS Bowl L4,2,7,0,5,0,NA,0,25,0,25,Trailing Daler,teamdaler,The Glorious Process,armandoguzman
-LTS Bowl L4,2,8,0,6,0,NA,0,25,0,25,NinerJay,NinerJay,"Once again, I'm tilting ",arthurdantas
-LTS Bowl L4,2,9,0,10,0,NA,0,25,0,25,crackofdawn321,crackofdawn321,Searching for Stapler,Spencer
-LTS Bowl L4,2,10,0,9,0,NA,0,25,0,25,Searching for Stapler,Spencer,crackofdawn321,crackofdawn321
-LTS Bowl L4,2,11,0,4,0,NA,0,25,0,25,Damn Fine Coffee,JoshWest,Chickpea Smoothie,apulianas
-LTS Bowl L4,2,12,0,3,0,NA,0,25,0,25,outshine13,outshine13,The Lib Owners,nak97
