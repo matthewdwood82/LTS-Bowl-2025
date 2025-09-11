@@ -17,10 +17,18 @@ library(DT)
 # get connection to Sleeper leagues
 source("R/get_conn.R")
 
+# get league names
+df_league_names <- purrr::map(lts_conn, ~ ff_league(.x)) |>
+  dplyr::bind_rows(.id = "league") |>
+  dplyr::select(league, league_id, league_name)
+
+v_rename <- setNames(df_league_names$league_name, df_league_names$league)
+
 # get all franchise names and ids for all leagues
 df_franchises <-
   purrr::map(lts_conn, ~ ffscrapr::ff_franchises(.x)) %>%
-  dplyr::bind_rows(.id = "league")
+  dplyr::bind_rows(.id = "league") |> 
+  dplyr::mutate(league = recode(league, !!!v_rename))
 
 # current week
 this_week <- difftime(lubridate::now(), lubridate::ymd("2025-09-03"), units = "weeks") %>% ceiling() %>% as.integer()
@@ -40,7 +48,8 @@ df_scores <- purrr::map(lts_conn, ~ ff_schedule(.x)) %>%
   dplyr::bind_rows(.id = "league") %>%
   # will only report the completed results week when the new week starts
   dplyr::filter(week <= this_week) %>%
-  dplyr::mutate(diff_score = abs(franchise_score - opponent_score),
+  dplyr::mutate(league = recode(league, !!!v_rename),
+                diff_score = abs(franchise_score - opponent_score),
                 diff_rank = ceiling(rank(desc(diff_score), ties.method = "min")/2),
                 total_score = franchise_score + opponent_score,
                 total_rank = ceiling(rank(desc(total_score), ties.method = "min")/2)) %>%
@@ -223,16 +232,12 @@ readr::write_csv(df_total_points, "dat/df_total_points.csv")
 # survived teams
 df_week_list <- df_scores %>%
   # hardcode until we resolve the playoff score reporting
-  dplyr::filter(week < 14) %>%
+  dplyr::filter(week < 15) %>%
   # dplyr::filter(week <= update_week) %>%
   dplyr::arrange(week) %>%
   dplyr::group_by(league, franchise_id) %>%
   dplyr::mutate(cum_franchise_score = cumsum(franchise_score)) %>%
   dplyr::ungroup() %>%
-  # dplyr::group_by(week) %>%
-  # dplyr::arrange(franchise_score) %>%
-  # # tidyr::nest(.key = "week_df") %>%
-  # dplyr::ungroup() %>%
   split(.$week)
 
 # get max week in data, i.e., the current week
