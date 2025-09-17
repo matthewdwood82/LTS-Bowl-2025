@@ -7,7 +7,7 @@ format:
     embed-resources: true
 page-layout: full
 toc: true
-toc-title: "![](./images/BOWL2024.png)"
+toc-title: "![](./images/BOWL.png)"
 toc-depth: 4
 toc-expand: 1
 toc-location: left
