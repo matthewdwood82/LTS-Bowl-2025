@@ -36,7 +36,9 @@ this_week <- difftime(lubridate::now(), lubridate::ymd("2025-09-03"), units = "w
 # week number for update
 update_week <- difftime(
   lubridate::now(tz = "America/New_York"),
-  lubridate::ymd_hms("2025-09-03 11:00:00", tz = "America/New_York"),
+  # TUE before the first THU night game
+  # so it says results are final for week just completed on 1130a scheduled run
+  lubridate::ymd_hms("2025-09-02 11:00:00", tz = "America/New_York"),
   units = "weeks"
 ) %>%
   floor() %>%  as.integer()
