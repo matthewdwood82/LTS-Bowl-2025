@@ -42,7 +42,7 @@ this_week <- difftime(lubridate::now(), lubridate::ymd("2025-09-03"), units = "w
 #   units = "weeks"
 # ) %>%
 #   floor() %>%  as.integer()
-update_week <- 15
+update_week <- 16
 readr::write_lines(update_week, "./dat/update_week.txt")
 
 # get all scores for each week
